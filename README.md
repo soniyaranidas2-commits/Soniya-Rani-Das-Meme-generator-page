@@ -1,0 +1,1 @@
+1)Choose a picture you want to create meme of. 2)Add text for the top and bottom of the picture. 3)Drag and drop it wherever you want. 4)Choose the font style to your liking. 5)Choose the color of the text to your like. The page generates the meme. You can download the generated meme in your system.
