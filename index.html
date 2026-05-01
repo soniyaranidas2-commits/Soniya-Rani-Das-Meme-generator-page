@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeGen Luxe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<div class="container">
+    <header>
+        <h1>Meme<span>Gen</span> Luxe</h1>
+        <p>Create viral memes in seconds</p>
+    </header>
+    
+    <div class="generator-card">
+        <div class="controls">
+    <div class="file-upload">
+        <label for="imageInput" class="custom-file-upload">📸 Upload Template</label>
+        <input type="file" id="imageInput" accept="image/*">
+    </div>
+    
+    <div class="input-group">
+        <input type="text" id="topTextInput" placeholder="Top Text (Drag me!)" spellcheck="false">
+        <input type="text" id="bottomTextInput" placeholder="Bottom Text (Drag me!)" spellcheck="false">
+        <label>Choose Font Style</label>
+        <select id="fontFamilyInput">
+            <option value="Impact">Impact (Classic)</option>
+            <option value="Arial">Arial</option>
+            <option value="Comic Sans MS">Comic Sans (Chaos)</option>
+            <option value="Montserrat">Montserrat (Modern)</option>
+            <option value="Courier New">Typewriter</option>
+            <option value="Georgia">Serif Style</option>
+        </select>
+    </div>
+
+    <div class="effects-row">
+        <button onclick="applyFilter('none')">Normal</button>
+        <button onclick="applyFilter('grayscale(100%)')">B&W</button>
+        <button onclick="applyFilter('contrast(200%) brightness(150%) saturate(300%)')">Deep Fry</button>
+    </div>
+
+    <div class="settings-row">
+        <div class="control-item">
+            <label>Color</label>
+            <input type="color" id="colorInput" value="#ffffff">
+        </div>
+        <div class="control-item">
+            <label>Size</label>
+            <input type="range" id="fontSizeInput" min="20" max="100" value="50">
+        </div>
+    </div>
+
+    <button id="downloadBtn">✨ Download Meme</button>
+    <p style="font-size: 0.8rem; opacity: 0.5;">Tip: Click and drag text directly on the image!</p>
+</div>
+        <div class="preview-area">
+            <div class="canvas-wrapper">
+                <canvas id="memeCanvas"></canvas>
+                <div id="placeholderText">Your Masterpiece Preview</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
